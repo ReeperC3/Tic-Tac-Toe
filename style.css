@@ -1,0 +1,34 @@
+* {
+  padding: none;
+  margin: none;
+  outline: none;
+  font-family: 'Mooli', sans-serif;
+}
+
+.container {
+  display: grid;
+  justify-items: center;
+}
+
+.heading {
+  font-size: 50px;
+  text-align: center;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 51vh;
+}
+
+.spot {
+  border: 2px black solid;
+  height: 17vh;
+  width: 17vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  font-family: 'Montserrat', 'Mooli', sans-serif;
+}
