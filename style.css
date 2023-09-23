@@ -15,20 +15,10 @@
   text-align: center;
 }
 
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  width: 51vh;
-}
-
-.spot {
+td {
   border: 2px black solid;
   height: 17vh;
   width: 17vh;
-  display: grid;
-  justify-content: center;
-  align-items: center;
   font-size: 120px;
   font-family: 'Montserrat', 'Mooli', sans-serif;
 }
