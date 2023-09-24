@@ -22,3 +22,11 @@ td {
   font-size: 120px;
   font-family: 'Montserrat', 'Mooli', sans-serif;
 }
+
+.no {
+  display: none;
+}
+
+.yes {
+  display: grid;
+}
