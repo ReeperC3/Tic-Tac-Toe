@@ -15,7 +15,24 @@
 </head>
 <body>
   
-  <div class="container">
+  <div class="selections y">
+    <div class="xando">
+      <div class="x">x</div>
+      <div class="o">o</div>
+    </div>
+    <form action="" method="post" class="options">
+      <div><label for="pvp">Player vs Player</label>
+      <input type="radio" name="pvp" id="pvp" checked></div>
+      <div class="optionshead">Player vs Computer</div>
+      <div><label for="pvc">Player goes first</label>
+      <input type="radio" name="pvp" id="pvc"></div>
+      <div><label for="cvp">Computer goes first</label>
+      <input type="radio" name="pvp" id="cvp"></div>
+      <button type="button" class="start">Start</button onclick="startGame()">
+    </form>
+  </div>
+
+  <div class="container n">
     <h1 class="heading">Tic Tac Toe</h1>
     <table>
       <tbody class="gamebox">
@@ -36,8 +53,9 @@
         </tr>
       </tbody>
     </table>
+    <button class="changeChoice">Change Settings</button>
     <div class="winnertext"></div>
-    <button type="button" class="no" id="newGame" onclick="gameBoard.newGame()">New Game</button>
+    <button type="button" class="no" id="newGame" onclick="const gameBoard = game(); gameBoard.newGame()">New Game</button>
   </div>
 
 </body>
